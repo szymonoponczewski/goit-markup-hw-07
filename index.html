@@ -16,29 +16,34 @@
     />
   </head>
   <body>
-    <header class="header-border-style">
+    <header class="header">
       <div class="container header-style list-display">
-        <a href="index.html" class="logo-header"
-          ><span class="logo-header-front">Web</span>Studio</a
+        <a href="index.html" class="header__logo header__logo--right"
+          ><span class="header__logo header__logo--left">Web</span>Studio</a
         >
-        <nav class="nav-style">
-          <ul class="nav-list list-display">
-            <li class="is-active"><a class="nav-link" href="./index.html">Agencja</a></li>
-            <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-            <li><a class="nav-link" href="">Kontakt</a></li>
+        <nav class="main-nav">
+          <ul class="main-nav__list list-display">
+            <li class="main-nav__item main-nav__item--is-active">
+              <a class="main-nav__link" href="./index.html">Agencja</a>
+            </li>
+            <li><a class="main-nav__link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="main-nav__link" href="">Kontakt</a></li>
           </ul>
         </nav>
+
         <div class="header-mail-section">
-          <svg class="envelope-icon" width="16" height="13">
+          <svg class="header-mail-section__envelope-icon" width="16" height="13">
             <use href="images/icons.svg#icon-envelope"></use>
           </svg>
-          <a class="header-mail-link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+          <a class="header-mail-section__link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
         </div>
         <div class="header-tel-section">
-          <svg class="smartphone-icon" width="11" height="16">
+          <svg class="header-tel-section__smartphone-icon" width="11" height="16">
             <use href="images/icons.svg#icon-smartphone"></use>
           </svg>
-          <a class="header-tel-link" href="tel:48111111111">+48 111 111 111</a>
+          <a class="header-tel-section__link" href="tel:48111111111">+48 111 111 111</a>
         </div>
       </div>
     </header>
