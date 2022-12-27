@@ -1,0 +1,22 @@
+.main-slogan {
+  max-width: 100rem;
+  margin: 0 auto;
+  background-color: $background-color_5;
+  background-image: url('../images/section/header_background.jpg');
+  background-image: linear-gradient(to right, rgb(47, 48, 58) 40%);
+  background-size: cover;
+}
+.main-slogan__text {
+  color: $color_7;
+  text-transform: uppercase;
+  text-align: center;
+  width: 43.5rem;
+  margin-top: 6.63rem;
+  font-weight: 900;
+  font-size: 2.9rem;
+  letter-spacing: 0.06rem;
+  line-height: 1.36;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.87rem;
+}

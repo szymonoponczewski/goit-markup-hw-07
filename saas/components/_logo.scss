@@ -13,7 +13,14 @@
 }
 
 .page-logo--left {
-  color: rgba(33, 150, 243, 1);
+  color: $HoverColor;
   padding: 1.5rem 0rem 1.6rem;
 }
 
+.page-logo--footer-left {
+  color: $HoverColor;
+}
+
+.page-logo--footer-right {
+  color: $SecondaryFontColor;
+}
