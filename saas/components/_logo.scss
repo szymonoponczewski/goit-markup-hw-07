@@ -1,0 +1,19 @@
+.page-logo {
+  font-family: $SecondaryFontFamily;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.18;
+  letter-spacing: 0.03rem;
+}
+
+.page-logo--right {
+  color: rgba(0, 0, 0, 1);
+  padding: 1.5rem 0rem 1.6rem;
+  margin-right: 5.8rem;
+}
+
+.page-logo--left {
+  color: rgba(33, 150, 243, 1);
+  padding: 1.5rem 0rem 1.6rem;
+}
+

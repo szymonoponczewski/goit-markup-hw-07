@@ -1,2 +1,35 @@
-/* spianmy wszystkie partiale */
-@import './components/navigation/';
+/* spinamy wszystkie partiale */
+@import './utils/_vars';
+@import './components/_page-header';
+@import './components/_page-footer';
+@import './components/_button';
+
+/* wspolne style */
+
+* {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $DefaultFontFamily;
+  color: $DefaultFontColor;
+}
+
+.container {
+  margin: 0 auto;
+  width: 75rem;
+}
+
+.section {
+  padding: 5.9rem 0rem 5.9rem;
+}
+
+.list-display {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
