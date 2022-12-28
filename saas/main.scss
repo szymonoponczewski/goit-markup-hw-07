@@ -1,11 +1,14 @@
-/* spinamy wszystkie partiale */
 @import './utils/_vars';
 @import './components/_page-header';
 @import './components/_hero-section';
+@import './components/_description-section';
+@import './components/_our-team-section';
+@import './components/_our-clients-section';
+@import './components/_modal';
+@import './components/_portfolio-navigation';
+@import './components/_product-section';
 @import './components/_page-footer';
 @import './components/_button';
-
-/* wspolne style */
 
 * {
   text-decoration: none;
@@ -37,4 +40,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.hero-header {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.17;
+  letter-spacing: 0.03rem;
+  margin-bottom: 3.1rem;
 }

@@ -1,6 +1,6 @@
 .button {
-  background-color: $background-color_6;
-  color: $color_7;
+  background-color: $HoverColor;
+  color: $SecondaryFontColor;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.06rem;
@@ -11,10 +11,10 @@
   border-radius: 0.25rem;
   cursor: pointer;
   &:hover {
-    background-color: $background-color_7;
+    background-color: $ButtonHoverColor;
   }
   &:focus {
-    background-color: $background-color_7;
+    background-color: $ButtonHoverColor;
   }
 }
 
@@ -22,4 +22,31 @@
   padding: 0.63rem 2.56rem 0.63rem 2.63rem;
   margin-bottom: 6.63rem;
   margin-left: 31.2rem;
+}
+
+.portfolio-nav__button {
+  background-color: $DefaultBackgroundColor;
+  color: $DefaultFontColor;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.37rem 1.38rem;
+  line-height: 1.6;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: $HoverColor;
+    color: $SecondaryFontColor;
+    box-shadow: 0rem 0.19rem 0.06rem rgba(0, 0, 0, 0.1), 0rem 0.06rem 0.13rem rgba(0, 0, 0, 0.08),
+      0rem 0.13rem 0.13rem rgba(0, 0, 0, 0.12);
+  }
+  &:focus {
+    background-color: $HoverColor;
+    color: $SecondaryFontColor;
+    box-shadow: 0rem 0.19rem 0.06rem rgba(0, 0, 0, 0.1), 0rem 0.06rem 0.13rem rgba(0, 0, 0, 0.08),
+      0rem 0.13rem 0.13rem rgba(0, 0, 0, 0.12);
+  }
 }

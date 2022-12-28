@@ -1,13 +1,13 @@
 .main-slogan {
   max-width: 100rem;
   margin: 0 auto;
-  background-color: $background-color_5;
+  background-color: rgba(47, 48, 58, 0.4);
   background-image: url('../images/section/header_background.jpg');
   background-image: linear-gradient(to right, rgb(47, 48, 58) 40%);
   background-size: cover;
 }
 .main-slogan__text {
-  color: $color_7;
+  color: $SecondaryFontColor;
   text-transform: uppercase;
   text-align: center;
   width: 43.5rem;
@@ -19,4 +19,27 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.87rem;
+}
+
+.hero-list__item {
+  position: relative;
+}
+
+.hero-list__label {
+  position: absolute;
+  left: 0;
+  top: 14rem;
+  width: 100%;
+  height: 4.38rem;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.hero-list__slogan {
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 1rem;
+  text-align: center;
+  margin-top: 1.69rem;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  color: $SecondaryFontColor;
 }
