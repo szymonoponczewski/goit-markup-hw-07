@@ -1,5 +1,7 @@
 @import './utils/_vars';
+@import './utils/_globals';
 @import './components/_page-header';
+@import './components/_logo';
 @import './components/_hero-section';
 @import './components/_description-section';
 @import './components/_our-team-section';
@@ -9,43 +11,3 @@
 @import './components/_product-section';
 @import './components/_page-footer';
 @import './components/_button';
-
-* {
-  text-decoration: none;
-  color: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: $DefaultFontFamily;
-  color: $DefaultFontColor;
-}
-
-.container {
-  margin: 0 auto;
-  width: 75rem;
-}
-
-.section {
-  padding: 5.9rem 0rem 5.9rem;
-}
-
-.hero {
-  padding: 0;
-}
-
-.list-display {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.hero-header {
-  text-align: center;
-  font-size: 2rem;
-  line-height: 1.17;
-  letter-spacing: 0.03rem;
-  margin-bottom: 3.1rem;
-}
