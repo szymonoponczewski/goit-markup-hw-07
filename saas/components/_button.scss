@@ -50,3 +50,35 @@
       0rem 0.13rem 0.13rem rgba(0, 0, 0, 0.12);
   }
 }
+.button--newsletter-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12.5rem;
+  height: 3.13rem;
+}
+
+.modal__close-button {
+  position: absolute;
+  width: 1.88rem;
+  height: 1.88rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  border: 0.06rem solid rgba(0, 0, 0, 0.1);
+  background-color: $ModalCloseButtonColor;
+  border-radius: 50%;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $ModalCloseButtonHoverColor;
+    color: $SecondaryFontColor;
+    cursor: pointer;
+  }
+}

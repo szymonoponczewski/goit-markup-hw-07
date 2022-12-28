@@ -6,29 +6,7 @@
   height: 100%;
   background-color: $BackdropColor;
 }
-.modal__close-button {
-  position: absolute;
-  width: 1.88rem;
-  height: 1.88rem;
-  top: 0.5rem;
-  right: 0.5rem;
-  border: 0.06rem solid rgba(0, 0, 0, 0.1);
-  background-color: $ModalCloseButtonColor;
-  border-radius: 50%;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background-color: $ModalCloseButtonHoverColor;
-    color: $SecondaryFontColor;
-    cursor: pointer;
-  }
-  &:focus {
-    background-color: $ModalCloseButtonHoverColor;
-    color: $SecondaryFontColor;
-    cursor: pointer;
-  }
-}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -41,11 +19,13 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .backdrop.is-hidden {
   .modal {
     transform: translate(-50%, -50%) scale(0.5);
   }
 }
+
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
@@ -53,12 +33,14 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-form {
   position: relative;
   display: flex;
   row-gap: 0.63rem;
   flex-direction: column;
 }
+
 .modal-form__header {
   font-weight: 700;
   font-size: 1.25rem;
@@ -68,6 +50,7 @@
   margin-bottom: 0.5rem;
   color: $DefaultFontColor;
 }
+
 .modal-form__label {
   display: flex;
   position: relative;
@@ -79,6 +62,7 @@
   letter-spacing: 0.01rem;
   color: $ModalFormLabelColor;
 }
+
 .modal-form__input {
   width: 28rem;
   height: 2.5rem;
@@ -87,6 +71,7 @@
   border-radius: 0.25rem;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:focus {
     border: 0.06rem solid $HoverColor;
     border: 0.06rem solid $HoverColor;
@@ -97,6 +82,7 @@
     }
   }
 }
+
 .form-footer {
   position: relative;
   display: flex;
@@ -107,20 +93,24 @@
   letter-spacing: 0.03rem;
   color: $ClickablesColor;
 }
+
 .form-footer__policy-label {
   display: flex;
   justify-content: center;
   align-items: center;
+
   &:hover {
     cursor: pointer;
   }
 }
+
 .form-footer__policy-input {
   position: absolute;
   display: inline-block;
   left: 0.81rem;
   opacity: 0;
   cursor: pointer;
+
   &:focus {
     + {
       .form-footer__checkbox-unchecked {
@@ -128,6 +118,7 @@
       }
     }
   }
+
   &:checked {
     ~ {
       .form-footer__checkbox-checked {
@@ -141,18 +132,22 @@
     }
   }
 }
+
 .form-footer__checkbox-unchecked {
   margin-right: 0.44rem;
 }
+
 .form-footer__checkbox-checked {
   margin-right: 0.44rem;
   display: none;
   fill: $FormFooterCheckboxColor;
 }
+
 .form-footer__link {
   text-decoration: underline;
   color: $LinkUnderlineColor;
 }
+
 .modal-form__comment-section {
   resize: none;
   padding: 0.75rem 1rem;
@@ -160,9 +155,11 @@
   border-radius: 0.25rem;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:focus {
     border: 0.06rem solid $HoverColor;
   }
+
   &::placeholder {
     font-size: 0.75rem;
     line-height: 0.88rem;
@@ -170,6 +167,7 @@
     color: $ModalFormPlaceholderColor;
   }
 }
+
 .button--modal-footer {
   position: absolute;
   bottom: 2.5rem;
@@ -178,6 +176,7 @@
   width: 12.5rem;
   height: 3.13rem;
 }
+
 .modal-form__icon {
   position: absolute;
   left: 0.88rem;

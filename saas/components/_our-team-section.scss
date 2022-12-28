@@ -1,6 +1,7 @@
 .our-team {
   background-color: $DefaultBackgroundColor;
 }
+
 .team-members-card {
   display: flex;
   flex-direction: column;
@@ -13,22 +14,26 @@
     0rem 0.13rem 0.06rem rgba(0, 0, 0, 0.2);
   border-radius: 0rem 0rem 0.25rem 0.25rem;
 }
+
 .team-members-card__image {
   display: block;
   margin-bottom: 1.25rem;
 }
+
 .team-members-card__name {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.17;
   letter-spacing: 0.03rem;
 }
+
 .team-members-card__job {
   color: $ClickablesColor;
   font-size: 1rem;
   line-height: 1.17;
   letter-spacing: 0.03rem;
 }
+
 .social-links__icon-wrapper {
   display: flex;
   justify-content: center;
@@ -56,30 +61,35 @@
     }
   }
 }
+
 .instagram-icon {
   fill: $SocialLinkColor;
   &:hover {
     fill: $SecondaryFontColor;
   }
 }
+
 .twitter-icon {
   fill: $SocialLinkColor;
   &:hover {
     fill: $SecondaryFontColor;
   }
 }
+
 .facebook-icon {
   fill: $SocialLinkColor;
   &:hover {
     fill: $SecondaryFontColor;
   }
 }
+
 .linkedin-icon {
   fill: $SocialLinkColor;
   &:hover {
     fill: $SecondaryFontColor;
   }
 }
+
 .social-links__list {
   justify-content: space-between;
   column-gap: 0.63rem;
