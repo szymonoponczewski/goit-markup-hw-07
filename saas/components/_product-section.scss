@@ -19,8 +19,8 @@
 .product-set__item {
   flex-basis: calc((100% - 5.62rem) / 3);
   transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $TransitionDuration;
+  transition-timing-function: $TransitionTimingFunction;
 
   &:hover {
     box-shadow: 0rem 0.06rem 0.06rem rgba(0, 0, 0, 0.12), 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.06),
@@ -49,8 +49,8 @@
   height: 100%;
   background-color: $ProductOverlayColor;
   transform: translateY(100%);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $TransitionDuration;
+  transition-timing-function: $TransitionTimingFunction;
 }
 
 .product-set__text {

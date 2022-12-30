@@ -1,8 +1,8 @@
 .our-clients-list__icon {
   fill: $ClientsIconColor;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $TransitionDuration;
+  transition-timing-function: $TransitionTimingFunction;
 }
 
 .our-clients-list__item {
@@ -14,8 +14,8 @@
   border: 0.06rem solid rgba(175, 177, 184, 1);
   border-radius: 0.25rem;
   transition-property: border-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $TransitionDuration;
+  transition-timing-function: $TransitionTimingFunction;
 
   &:hover {
     cursor: pointer;

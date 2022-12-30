@@ -43,8 +43,8 @@
   line-height: 1.17;
   letter-spacing: 0.02rem;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $TransitionDuration;
+  transition-timing-function: $TransitionTimingFunction;
   margin-right: 1.9rem;
   &:focus {
     color: $HoverColor;
@@ -58,8 +58,8 @@
   line-height: 1.17;
   letter-spacing: 0.02rem;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $TransitionDuration;
+  transition-timing-function: $TransitionTimingFunction;
   &:focus {
     color: $HoverColor;
   }
@@ -69,16 +69,16 @@
   fill: rgba(117, 117, 117, 1);
   cursor: pointer;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $TransitionDuration;
+  transition-timing-function: $TransitionTimingFunction;
 }
 
 .header-tel-section__smartphone-icon {
   fill: rgba(117, 117, 117, 1);
   cursor: pointer;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $TransitionDuration;
+  transition-timing-function: $TransitionTimingFunction;
 }
 
 .main-nav {
@@ -96,8 +96,8 @@
   line-height: 1.03;
   letter-spacing: 0.02rem;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $TransitionDuration;
+  transition-timing-function: $TransitionTimingFunction;
   &:hover {
     color: $HoverColor;
   }
