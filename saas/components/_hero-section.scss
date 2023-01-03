@@ -1,11 +1,12 @@
 .main-slogan {
-  max-width: 100rem;
-  margin: 0 auto;
-  background-image: url('../images/section/header_background.jpg');
+  background-image: linear-gradient(to right, rgb(47, 48, 58) 0.4),
+    url('../images/section/header_background.jpg');
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: linear-gradient(to right, rgb(47, 48, 58) 40%);
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
 }
+
 .main-slogan__text {
   color: $SecondaryFontColor;
   text-transform: uppercase;
@@ -13,12 +14,10 @@
   width: 43.5rem;
   margin-top: 6.63rem;
   font-weight: 900;
-  font-size: 2.9rem;
+  font-size: 2.75rem;
   letter-spacing: 0.06rem;
   line-height: 1.36;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.87rem;
+  margin: 6.625rem 15.75rem 1.875rem;
 }
 
 .hero-list__item {

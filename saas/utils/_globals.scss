@@ -13,10 +13,11 @@ body {
 .container {
   margin: 0 auto;
   width: 75rem;
+  padding: 0 0.938rem;
 }
 
 .section {
-  padding: 5.9rem 0rem 5.9rem;
+  padding: 5.875rem 0;
 }
 
 .hero {
@@ -36,4 +37,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03rem;
   margin-bottom: 3.1rem;
+}
+
+.address {
+  font-style: normal;
 }
