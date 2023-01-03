@@ -57,32 +57,6 @@
   margin-top: 0.75rem;
 }
 
-.social-links__icon-wrapper--footer-background {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer-instagram-icon {
-  fill: $SecondaryFontColor;
-}
-
-.footer-twitter-icon {
-  fill: $SecondaryFontColor;
-}
-
-.footer-facebook-icon {
-  fill: $SecondaryFontColor;
-}
-
-.footer-linkedin-icon {
-  fill: $SecondaryFontColor;
-}
-
-.footer-icon-wrapper {
-  &:hover {
-    background-color: $HoverColor;
-  }
-}
-
 .footer-form {
   display: flex;
   position: relative;
