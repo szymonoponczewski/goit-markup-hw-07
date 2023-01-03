@@ -19,14 +19,31 @@
       color: $HoverColor;
     }
   }
+  &:focus {
+    .header-mail-section__envelope-icon {
+      fill: $HoverColor;
+    }
+    .header-mail-section__link {
+      color: $HoverColor;
+    }
+  }
 }
 
 .header-tel-section {
+  
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 0.63rem;
   &:hover {
+    .header-tel-section__smartphone-icon {
+      fill: $HoverColor;
+    }
+    .header-tel-section__link {
+      color: $HoverColor;
+    }
+  }
+  &:focus {
     .header-tel-section__smartphone-icon {
       fill: $HoverColor;
     }
