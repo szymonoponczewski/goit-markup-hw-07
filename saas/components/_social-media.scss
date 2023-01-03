@@ -11,15 +11,9 @@
   cursor: pointer;
   &:hover {
     background-color: $HoverColor;
-    .instagram-icon {
-      fill: $SecondaryFontColor;
-    }
-    .twitter-icon {
-      fill: $SecondaryFontColor;
-    }
-    .facebook-icon {
-      fill: $SecondaryFontColor;
-    }
+    .instagram-icon,
+    .twitter-icon,
+    .facebook-icon,
     .linkedin-icon {
       fill: $SecondaryFontColor;
     }
@@ -36,31 +30,13 @@
   }
 }
 
-.instagram-icon {
-  fill: $SocialLinkColor;
-  &:hover {
-    fill: $SecondaryFontColor;
-  }
-}
-
-.twitter-icon {
-  fill: $SocialLinkColor;
-  &:hover {
-    fill: $SecondaryFontColor;
-  }
-}
-
-.facebook-icon {
-  fill: $SocialLinkColor;
-  &:hover {
-    fill: $SecondaryFontColor;
-  }
-}
-
+.instagram-icon,
+.twitter-icon,
+.facebook-icon,
 .linkedin-icon {
   fill: $SocialLinkColor;
   &:hover {
-    fill: $SecondaryFontColor;
+    fill: $HoverIconFillColor;
   }
 }
 
@@ -69,7 +45,7 @@
   .twitter-icon,
   .facebook-icon,
   .linkedin-icon {
-    fill: $SecondaryFontColor;
+    fill: $HoverIconFillColor;
   }
 }
 
@@ -89,24 +65,9 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-instagram-icon {
-  fill: $SecondaryFontColor;
-}
-
-.footer-twitter-icon {
-  fill: $SecondaryFontColor;
-}
-
-.footer-facebook-icon {
-  fill: $SecondaryFontColor;
-}
-
-.footer-linkedin-icon {
-  fill: $SecondaryFontColor;
-}
-
-.footer-icon-wrapper {
-  &:hover {
-    background-color: $HoverColor;
-  }
+.instagram-icon--footer-color,
+.twitter-icon--footer-color,
+.facebook-icon--footer-color,
+.linkedin-icon--footer-color {
+  fill: $HoverIconFillColor;
 }

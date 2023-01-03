@@ -110,27 +110,6 @@
   left: 0.81rem;
   opacity: 0;
   cursor: pointer;
-
-  &:focus {
-    + {
-      .form-footer__checkbox-unchecked {
-        box-shadow: 0 0 0 0.19rem $HoverColor;
-      }
-    }
-  }
-
-  &:checked {
-    ~ {
-      .form-footer__checkbox-checked {
-        display: inline-block;
-      }
-    }
-    + {
-      .form-footer__checkbox-unchecked {
-        display: none;
-      }
-    }
-  }
 }
 
 .form-footer__checkbox-unchecked {
@@ -141,6 +120,18 @@
   margin-right: 0.44rem;
   display: none;
   fill: $FormFooterCheckboxColor;
+}
+
+.form-footer__policy-input:focus + .form-footer__checkbox-unchecked {
+  box-shadow: 0 0 0 0.19rem $HoverColor;
+}
+
+.form-footer__policy-input:checked ~ .form-footer__checkbox-checked {
+  display: inline-block;
+}
+
+.form-footer__policy-input:checked + .form-footer__checkbox-unchecked {
+  display: none;
 }
 
 .form-footer__link {

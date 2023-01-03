@@ -1,12 +1,15 @@
 .main-description {
   padding-bottom: 0;
 }
+
 .main-description__set {
-  column-gap: 1.88rem;
+  column-gap: 1.875rem;
 }
+
 .main-description__item {
   flex-basis: calc((100% - 5.6rem) / 4);
 }
+
 .main-description__card {
   background-color: $MainDescriptionCardColor;
   height: 7.5rem;
@@ -14,6 +17,7 @@
   padding-left: 6.48rem;
   padding-top: 1.56rem;
 }
+
 .main-description__header {
   text-transform: uppercase;
   margin-bottom: 0.63rem;
@@ -22,6 +26,7 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+
 .main-description__paragraph {
   color: $ClickablesColor;
   width: 16.9rem;
