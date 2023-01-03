@@ -62,6 +62,12 @@
   }
 }
 
+.instagram-link:focus {
+  .instagram-icon {
+    fill: $HoverColor;
+  }
+}
+
 .instagram-icon {
   fill: $SocialLinkColor;
   &:hover {

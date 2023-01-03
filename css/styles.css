@@ -115,6 +115,10 @@ body {
   fill: var(--hover-color);
 }
 
+.header-tel-section:has(.header-tel-section__link:focus) .header-tel-section__smartphone-icon {
+  fill: blue;
+}
+
 .header-tel-section:hover .header-tel-section__link {
   color: var(--hover-color);
 }

@@ -19,18 +19,14 @@
       color: $HoverColor;
     }
   }
-  &:focus {
+  &:has(> .header-mail-section__link:focus) {
     .header-mail-section__envelope-icon {
       fill: $HoverColor;
-    }
-    .header-mail-section__link {
-      color: $HoverColor;
     }
   }
 }
 
 .header-tel-section {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,12 +39,9 @@
       color: $HoverColor;
     }
   }
-  &:focus {
+  &:has(> .header-tel-section__link:focus) {
     .header-tel-section__smartphone-icon {
       fill: $HoverColor;
-    }
-    .header-tel-section__link {
-      color: $HoverColor;
     }
   }
 }
