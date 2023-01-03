@@ -64,6 +64,21 @@
   }
 }
 
+.social-links__link:focus {
+  .instagram-icon,
+  .twitter-icon,
+  .facebook-icon,
+  .linkedin-icon {
+    fill: $SecondaryFontColor;
+  }
+}
+
+.social-links__icon-wrapper {
+  &:has(> .social-links__link:focus) {
+    background-color: $HoverColor;
+  }
+}
+
 .social-links__list {
   justify-content: space-between;
   column-gap: 0.63rem;

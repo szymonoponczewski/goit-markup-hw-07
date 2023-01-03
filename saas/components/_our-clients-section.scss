@@ -27,18 +27,13 @@
       fill: $HoverColor;
     }
   }
-
-  &:focus {
-    border: 0.06rem solid rgb(33, 150, 243);
-    border-radius: 0.25rem;
-  }
 }
 
-.our-clients-item {
-  &:focus {
-    .our-clients-list__icon {
-      cursor: pointer;
-      fill: $HoverColor;
-    }
-  }
+.our-clients-list__item:has(> .our-clients-list__link:focus) .our-clients-list__icon {
+  fill: $HoverColor;
+}
+
+.our-clients-list__item:has(> .our-clients-list__link:focus) {
+  border: 0.06rem solid rgb(33, 150, 243);
+  border-radius: 0.25rem;
 }
