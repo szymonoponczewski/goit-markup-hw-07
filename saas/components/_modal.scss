@@ -46,7 +46,7 @@
   font-size: 1.25rem;
   line-height: 1.44rem;
   text-align: center;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.03em;
   margin-bottom: 0.5rem;
   color: $DefaultFontColor;
 }
@@ -59,7 +59,7 @@
   row-gap: 0.25rem;
   font-size: 0.75rem;
   line-height: 0.88rem;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.01em;
   color: $ModalFormLabelColor;
 }
 
@@ -90,7 +90,7 @@
   align-items: center;
   font-size: 0.88rem;
   line-height: 1.5rem;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.03em;
   color: $ClickablesColor;
 }
 
@@ -163,7 +163,7 @@
   &::placeholder {
     font-size: 0.75rem;
     line-height: 0.88rem;
-    letter-spacing: 0.01rem;
+    letter-spacing: 0.01em;
     color: $ModalFormPlaceholderColor;
   }
 }
