@@ -10,7 +10,7 @@
   row-gap: 0.563rem;
   margin-top: 1.25rem;
   font-size: 0.875rem;
-  line-height: 1.7;
+  line-height: 1.5;
   letter-spacing: 0.03em;
 }
 
@@ -26,7 +26,6 @@
 
 .footer-contact__contact-link {
   color: rgba(255, 255, 255, 0.6);
-
   transition-property: color;
   transition-duration: $TransitionDuration;
   transition-timing-function: $TransitionTimingFunction;
