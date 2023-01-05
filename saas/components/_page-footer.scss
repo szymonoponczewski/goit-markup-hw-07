@@ -80,7 +80,7 @@
   @extend .list-display;
 }
 
-.footer-form {
+.footer-form__group {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -89,7 +89,7 @@
   margin-left: 4.5rem;
 }
 
-.footer-form__header {
+.group__form-header {
   color: $SecondaryFontColor;
   font-weight: 700;
   font-size: 0.875rem;
@@ -100,11 +100,11 @@
   margin-bottom: 1.25rem;
 }
 
-.footer-form__newsletter-icon {
+.form-button__newsletter-icon {
   fill: $SecondaryFontColor;
 }
 
-.footer-form__input-field {
+.form-label__input-field {
   background-color: rgba(47, 48, 58, 1);
   width: 22.38rem;
   height: 3.13rem;

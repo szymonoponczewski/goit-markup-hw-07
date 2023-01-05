@@ -54,7 +54,11 @@
   }
 }
 
-.button--newsletter-button {
+.group__form-button {
+  @extend .button;
+}
+
+.group__form-button--newsletter {
   display: flex;
   justify-content: center;
   align-items: center;

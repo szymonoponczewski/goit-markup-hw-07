@@ -399,6 +399,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="footer__wrapper">
         <address class="wrapper__address">
@@ -448,21 +449,21 @@
             </ul>
           </div>
         </div>
-        <form>
-          <div class="footer-form" role="group" aria-labelledby="footer-newsletter">
-            <p class="footer-form__header" id="footer-newsletter">zapisz się do newslettera</p>
-            <label>
+        <form class="wrapper__footer-form">
+          <div class="footer-form__group" role="group" aria-labelledby="footer-newsletter">
+            <p class="group__form-header" id="footer-newsletter">zapisz się do newslettera</p>
+            <label class="group__form-label">
               <input
-                class="footer-form__input-field"
+                class="form-label__input-field"
                 type="email"
                 name="email"
                 placeholder="E-mail"
                 required
               />
             </label>
-            <button class="button button--newsletter-button" type="submit">
+            <button class="group__form-button group__form-button--newsletter" type="submit">
               Zapisz się
-              <svg class="footer-form__newsletter-icon" width="24" height="24">
+              <svg class="form-button__newsletter-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>

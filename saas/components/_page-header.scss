@@ -120,10 +120,11 @@
   }
 }
 
+.nav-item__link.nav-item__link--is-active {
+  color: $HoverColor;
+}
+
 .nav-item__link--is-active {
-  .nav-item__link {
-    color: $HoverColor;
-  }
   position: relative;
   &::after {
     content: '';

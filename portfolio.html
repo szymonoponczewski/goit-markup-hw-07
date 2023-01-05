@@ -72,31 +72,31 @@
         </nav>
 
         <!--PRODUCTS-->
-        <section class="products">
-          <ul class="product-set list-display">
-            <li class="product-set__item">
-              <div class="product-set__image">
+        <section class="portfolio__product">
+          <ul class="product-set">
+            <li class="set__product-item">
+              <div class="product-item__image">
                 <img
                   src="images/portfolio/technocrack.jpg"
                   alt="szablon strony internetowej na ekranie komputera"
                   width="370"
                   height="294"
                 />
-                <div class="product-set__overlay">
-                  <p class="product-set__text">
+                <div class="image__overlay">
+                  <p class="overlay__text">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
                     niezabezpieczone serwery konkurencji
                   </p>
                 </div>
               </div>
-              <div class="product-set__footer">
-                <div class="product-set__name">Technocrack</div>
-                <div class="product-set__type">Strona internetowa</div>
+              <div class="product-item__footer">
+                <div class="footer__product-name">Technocrack</div>
+                <div class="footer__product-type">Strona internetowa</div>
               </div>
             </li>
-            <li class="product-set__item">
-              <div class="product-set__image">
+            <li class="set__product-item">
+              <div class="product-item__image">
                 <img
                   src="images/portfolio/basketball_players.jpg"
                   alt="rysunek przedstawiający dwóch graczy w koszykówkę"
@@ -116,8 +116,8 @@
                 <div class="product-set__type">Dizajn</div>
               </div>
             </li>
-            <li class="product-set__item">
-              <div class="product-set__image">
+            <li class="set__product-item">
+              <div class="product-item__image">
                 <img
                   src="images/portfolio/seafood_restaurant_logo.jpg"
                   alt="logotyp restauracji z owocami morza"
@@ -137,8 +137,8 @@
                 <div class="product-set__type">Aplikacja</div>
               </div>
             </li>
-            <li class="product-set__item">
-              <div class="product-set__image">
+            <li class="set__product-item">
+              <div class="product-item__image">
                 <img
                   src="images/portfolio/projekt_prime.jpg"
                   alt="zdjęcie słuchawek nausznych"
@@ -158,8 +158,8 @@
                 <div class="product-set__type">Marketing</div>
               </div>
             </li>
-            <li class="product-set__item">
-              <div class="product-set__image">
+            <li class="set__product-item">
+              <div class="product-item__image">
                 <img
                   src="images/portfolio/projekt_boxes.jpg"
                   alt="zdjęcie dwóch prostokątnych opakowań"
@@ -179,8 +179,8 @@
                 <div class="product-set__type">Aplikacja</div>
               </div>
             </li>
-            <li class="product-set__item">
-              <div class="product-set__image">
+            <li class="set__product-item">
+              <div class="product-item__image">
                 <img
                   src="images/portfolio/insp_has_no_borders.jpg"
                   alt="monitor komputerowy wyświetlający stronę internetową"
@@ -200,8 +200,8 @@
                 <div class="product-set__type">Strona internetowa</div>
               </div>
             </li>
-            <li class="product-set__item">
-              <div class="product-set__image">
+            <li class="set__product-item">
+              <div class="product-item__image">
                 <img
                   src="images/portfolio/magazyn_lim_edition.jpg"
                   alt="zdjęcie czasopisma drukowanego"
@@ -221,8 +221,8 @@
                 <div class="product-set__type">Dizajn</div>
               </div>
             </li>
-            <li class="product-set__item">
-              <div class="product-set__image">
+            <li class="set__product-item">
+              <div class="product-item__image">
                 <img
                   src="images/portfolio/projekt_lab.jpg"
                   alt="zdjęcie zawieszki reklamowej"
@@ -242,8 +242,8 @@
                 <div class="product-set__type">Marketing</div>
               </div>
             </li>
-            <li class="product-set__item">
-              <div class="product-set__image">
+            <li class="set__product-item">
+              <div class="product-item__image">
                 <img
                   src="images/portfolio/growing_business.jpg"
                   alt="zdjęcie rąk piszących na klawiaturze laptopa"
@@ -316,21 +316,21 @@
             </ul>
           </div>
         </div>
-        <form>
-          <div class="footer-form" role="group" aria-labelledby="footer-newsletter">
-            <p class="footer-form__header" id="footer-newsletter">zapisz się do newslettera</p>
-            <label>
+        <form class="wrapper__footer-form">
+          <div class="footer-form__group" role="group" aria-labelledby="footer-newsletter">
+            <p class="group__form-header" id="footer-newsletter">zapisz się do newslettera</p>
+            <label class="group__form-label">
               <input
-                class="footer-form__input-field"
+                class="form-label__input-field"
                 type="email"
                 name="email"
                 placeholder="E-mail"
                 required
               />
             </label>
-            <button class="button button--newsletter-button" type="submit">
+            <button class="group__form-button group__form-button--newsletter" type="submit">
               Zapisz się
-              <svg class="footer-form__newsletter-icon" width="24" height="24">
+              <svg class="form-button__newsletter-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
