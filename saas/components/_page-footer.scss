@@ -3,6 +3,24 @@
   padding: 3.75rem 0rem 3.75rem;
 }
 
+.footer__wrapper {
+  @extend .container;
+  @extend .list-display;
+}
+
+.wrapper__address {
+  font-style: normal;
+}
+
+.address__logo {
+  @extend .page-logo;
+}
+
+.footer__contact {
+  @extend .container;
+  @extend .section;
+}
+
 .footer-contact {
   display: flex;
   flex-direction: column;
@@ -14,7 +32,7 @@
   letter-spacing: 0.03em;
 }
 
-.footer-contact__address-link {
+.link__address-link {
   color: $SecondaryFontColor;
   &:hover {
     color: $HoverColor;
@@ -24,7 +42,7 @@
   }
 }
 
-.footer-contact__contact-link {
+.link__contact-link {
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
   transition-duration: $TransitionDuration;
@@ -52,9 +70,13 @@
   align-items: flex-start;
 }
 
-.footer-icons {
+.wrapper__footer-icons {
   margin-left: 4.38rem;
   margin-top: 0.75rem;
+}
+
+.footer-icons__social {
+  @extend .social-links;
 }
 
 .footer-form {

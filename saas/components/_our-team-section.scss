@@ -1,8 +1,21 @@
 .our-team {
+  @extend .section;
   background-color: $DefaultBackgroundColor;
 }
 
-.team-members-card {
+.our-team__wrapper {
+  @extend .container;
+}
+
+.wrapper__header {
+  @extend .hero-header;
+}
+
+.wrapper__list {
+  @extend .list-display;
+}
+
+.list__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,19 +28,19 @@
   border-radius: 0rem 0rem 0.25rem 0.25rem;
 }
 
-.team-members-card__image {
+.card__image {
   display: block;
   margin-bottom: 1.25rem;
 }
 
-.team-members-card__name {
+.card__name {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
-.team-members-card__job {
+.card__job {
   color: $ClickablesColor;
   font-size: 1rem;
   line-height: 1.17;
