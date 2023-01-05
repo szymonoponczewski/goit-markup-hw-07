@@ -34,7 +34,7 @@
   transition-timing-function: $TransitionTimingFunction;
 }
 
-.modal-form {
+.contact__modal-form {
   position: relative;
   display: flex;
   row-gap: 0.63rem;
@@ -63,7 +63,7 @@
   color: $ModalFormLabelColor;
 }
 
-.modal-form__input {
+.label__input {
   width: 28rem;
   height: 2.5rem;
   padding-left: 2.63rem;
@@ -76,14 +76,14 @@
     border: 0.06rem solid $HoverColor;
     border: 0.06rem solid $HoverColor;
     + {
-      .modal-form__icon {
+      .input__modal-icon {
         fill: $HoverColor;
       }
     }
   }
 }
 
-.form-footer {
+.modal-form__footer {
   position: relative;
   display: flex;
   justify-content: center;
@@ -104,7 +104,7 @@
   }
 }
 
-.form-footer__policy-input {
+.policy-label__input {
   position: absolute;
   display: inline-block;
   left: 0.81rem;
@@ -112,34 +112,34 @@
   cursor: pointer;
 }
 
-.form-footer__checkbox-unchecked {
+.policy-label__checkbox-unchecked {
   margin-right: 0.44rem;
 }
 
-.form-footer__checkbox-checked {
+.policy-label__checkbox-checked {
   margin-right: 0.44rem;
   display: none;
   fill: $FormFooterCheckboxColor;
 }
 
-.form-footer__policy-input:focus + .form-footer__checkbox-unchecked {
+.policy-label__input:focus + .policy-label__checkbox-unchecked {
   box-shadow: 0 0 0 0.19rem $HoverColor;
 }
 
-.form-footer__policy-input:checked ~ .form-footer__checkbox-checked {
+.policy-label__input:checked ~ .policy-label__checkbox-checked {
   display: inline-block;
 }
 
-.form-footer__policy-input:checked + .form-footer__checkbox-unchecked {
+.policy-label__input:checked + .policy-label__checkbox-unchecked {
   display: none;
 }
 
-.form-footer__link {
+.policy-label__link {
   text-decoration: underline;
   color: $LinkUnderlineColor;
 }
 
-.modal-form__comment-section {
+.modal-form__comment {
   resize: none;
   padding: 0.75rem 1rem;
   border: 0.06rem solid rgba(33, 33, 33, 0.2);
@@ -159,16 +159,7 @@
   }
 }
 
-.button--modal-footer {
-  position: absolute;
-  bottom: 2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 12.5rem;
-  height: 3.13rem;
-}
-
-.modal-form__icon {
+.input__modal-icon {
   position: absolute;
   left: 0.88rem;
   top: 1.81rem;
