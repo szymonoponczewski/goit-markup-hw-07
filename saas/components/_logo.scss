@@ -6,19 +6,27 @@
   letter-spacing: 0.03em;
 }
 
-.page-logo--left {
+.wrapper__page-logo--left {
   color: $HoverColor;
 }
 
-.page-logo--right {
+.wrapper__page-logo--right {
   color: rgba(0, 0, 0, 1);
   margin-right: 5.8rem;
 }
 
-.address__logo-left {
+.wrapper__page-logo {
+  @extend .page-logo;
+}
+
+.address__logo {
+  @extend .page-logo;
+}
+
+.address__logo--left {
   color: $HoverColor;
 }
 
-.address__logo-right {
+.address__logo--right {
   color: $SecondaryFontColor;
 }

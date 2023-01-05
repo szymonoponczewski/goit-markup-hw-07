@@ -2,6 +2,10 @@
   @extend .section;
 }
 
+.our-clients__wrapper {
+  @extend .container;
+}
+
 .link__client-icon {
   fill: $ClientsIconColor;
   transition-property: fill;

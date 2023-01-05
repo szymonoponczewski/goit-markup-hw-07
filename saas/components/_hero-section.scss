@@ -1,4 +1,5 @@
 .main-slogan {
+  @extend .section;
   max-width: 100rem;
   margin: 0 auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -9,7 +10,11 @@
   text-align: center;
 }
 
-.main-slogan__text {
+.main-slogan__wrapper {
+  @extend .container;
+}
+
+.wrapper__main-header {
   color: $SecondaryFontColor;
   text-transform: uppercase;
   text-align: center;
@@ -22,11 +27,23 @@
   margin: 6.625rem 15.75rem 1.875rem;
 }
 
-.hero-list__item {
+.our-work {
+  @extend .section;
+}
+
+.our-work__wrapper {
+  @extend .container;
+}
+
+.wrapper__work-list {
+  @extend .list-display;
+}
+
+.work-list__item {
   position: relative;
 }
 
-.hero-list__label {
+.item__work-name {
   position: absolute;
   left: 0;
   top: 14rem;
@@ -35,7 +52,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.hero-list__slogan {
+.work-name__slogan {
   font-weight: 700;
   font-size: 0.88rem;
   line-height: 1rem;

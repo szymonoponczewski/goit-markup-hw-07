@@ -17,52 +17,54 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-style list-display">
-        <a class="page-logo page-logo--right" href="index.html"
-          ><span class="page-logo page-logo--left">Web</span>Studio
+      <div class="header__wrapper">
+        <a class="wrapper__page-logo wrapper__page-logo--right" href="index.html"
+          ><span class="wrapper__page-logo wrapper__page-logo--left">Web</span>Studio
         </a>
-        <nav class="main-nav">
-          <ul class="main-nav__list list-display">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__item--is-active" href="./index.html">Agencja</a>
+        <nav class="wrapper__main-nav">
+          <ul class="main-nav__list">
+            <li class="list__nav-item">
+              <a class="nav-item__link nav-item__link--is-active" href="./index.html">Agencja</a>
             </li>
             <li>
-              <a class="main-nav__link" href="portfolio.html">Portfolio </a>
+              <a class="nav-item__link" href="portfolio.html">Portfolio </a>
             </li>
-            <li><a class="main-nav__link" href="">Kontakt</a></li>
+            <li><a class="nav-item__link" href="">Kontakt</a></li>
           </ul>
         </nav>
-        <div class="header-mail-section">
-          <svg class="header-mail-section__envelope-icon" width="16" height="13">
+        <div class="wrapper__mail-section">
+          <svg class="mail-section__envelope-icon" width="16" height="13">
             <use href="images/icons.svg#icon-envelope"></use>
           </svg>
-          <a class="header-mail-section__link" href="mailto:info@devstudio.com">
-            info@devstudio.com
-          </a>
+          <a class="mail-section__link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
         </div>
-        <div class="header-tel-section">
-          <svg class="header-tel-section__smartphone-icon" width="11" height="16">
+        <div class="wrapper-tel-section">
+          <svg class="tel-section__smartphone-icon" width="11" height="16">
             <use href="images/icons.svg#icon-smartphone"></use>
           </svg>
-          <a class="header-tel-section__link" href="tel:48111111111">+48 111 111 111</a>
+          <a class="tel-section__link" href="tel:48111111111">+48 111 111 111</a>
         </div>
       </div>
     </header>
 
     <!--MAIN DESCRIPTION-->
     <main>
-      <section class="main-slogan section">
-        <div class="container">
-          <h1 class="main-slogan__text">efektywne rozwiązania dla waszego biznesu</h1>
-          <button class="button button--order-button" type="button" data-modal-open>
+      <section class="main-slogan">
+        <div class="main-slogan__wrapper">
+          <h1 class="wrapper__main-header">efektywne rozwiązania dla waszego biznesu</h1>
+          <button
+            class="main-header__button main-header__button--order"
+            type="button"
+            data-modal-open
+          >
             Zamów usługę
           </button>
         </div>
       </section>
-      <section class="section">
-        <div class="container main-description">
-          <ul class="main-description__set list-display">
-            <li class="set__item">
+      <section class="main-description">
+        <div class="main-description__wrapper">
+          <ul class="wrapper__description-set">
+            <li class="description-set__item">
               <hgroup class="item__group">
                 <div class="group__card">
                   <svg width="70" height="70">
@@ -76,7 +78,7 @@
                 </p>
               </hgroup>
             </li>
-            <li class="set__item">
+            <li class="description-set__item">
               <hgroup class="item__group">
                 <div class="group__card">
                   <svg width="70" height="70">
@@ -90,7 +92,7 @@
                 </p>
               </hgroup>
             </li>
-            <li class="set__item">
+            <li class="description-set__item">
               <hgroup class="item__group">
                 <div class="group__card">
                   <svg width="70" height="70">
@@ -104,7 +106,7 @@
                 </p>
               </hgroup>
             </li>
-            <li class="set__item">
+            <li class="description-set__item">
               <hgroup class="item__group">
                 <div class="group__card">
                   <svg width="70" height="70">
@@ -123,41 +125,42 @@
       </section>
 
       <!-- WHAT WE DO-->
-      <section class="section">
-        <div class="container">
-          <h2 class="hero-header">Czym się zajmujemy</h2>
-          <ul class="hero-list list-display">
-            <li class="hero-list__item">
+      <section class="our-work">
+        <div class="our-work__wrapper">
+          <h2 class="wrapper__header">Czym się zajmujemy</h2>
+          <ul class="wrapper__work-list">
+            <li class="work-list__item">
               <img
                 src="images/section/programming.jpg"
                 alt="ręce na klawiaturze piszące kod"
                 width="370"
                 height="294"
               />
-              <div class="hero-list__label">
-                <p class="hero-list__slogan">aplikacje komputerowe</p>
+              <div class="item__work-name">
+                <p class="work-name__slogan">aplikacje komputerowe</p>
               </div>
             </li>
-            <li class="hero-list__item">
+            <li class="work-list__item">
               <img
                 src="images/section/ui_check.jpg"
                 alt="ekran laptopa wyświetlający grafikę"
                 width="370"
                 height="294"
               />
-              <div class="hero-list__label">
-                <p class="hero-list__slogan">aplikacje mobilne</p>
+              <div class="item__work-name">
+                <p class="work-name__slogan">aplikacje mobilne</p>
               </div>
             </li>
-            <li class="hero-list__item">
+
+            <li class="work-list__item">
               <img
                 src="images/section/designing_color_picker.jpg"
                 alt="człowiek trzymający tablet z paletą kolorów"
                 width="370"
                 height="294"
               />
-              <div class="hero-list__label">
-                <p class="hero-list__slogan">rozwiązania graficzne</p>
+              <div class="item__work-name">
+                <p class="work-name__slogan">rozwiązania graficzne</p>
               </div>
             </li>
           </ul>

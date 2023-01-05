@@ -18,12 +18,16 @@
   }
 }
 
-.button--order-button {
+.main-header__button {
+  @extend .button;
+}
+
+.main-header__button--order {
   padding: 0.63rem 2.56rem 0.63rem 2.63rem;
   margin-bottom: 6.625rem;
 }
 
-.portfolio-nav__button {
+.element__nav-button {
   background-color: $DefaultBackgroundColor;
   color: $DefaultFontColor;
   font-weight: 500;

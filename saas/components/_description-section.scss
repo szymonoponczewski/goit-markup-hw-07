@@ -1,12 +1,18 @@
 .main-description {
+  @extend .section;
   padding-bottom: 0;
 }
 
-.main-description__set {
+.main-description__wrapper {
+  @extend .container;
+}
+
+.wrapper__description-set {
+  @extend .list-display;
   column-gap: 1.875rem;
 }
 
-.set__item {
+.description-set__item {
   flex-basis: calc((100% - 5.6rem) / 4);
 }
 

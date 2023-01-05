@@ -1,53 +1,55 @@
-.header-style {
-  justify-content: flex-start;
-}
-
 .header {
   padding: 1.5rem 0rem 1.563rem;
   border-bottom: 0.06rem solid rgb(236, 236, 236);
 }
 
-.header-mail-section {
+.header__wrapper {
+  @extend .container;
+  @extend .list-display;
+  justify-content: flex-start;
+}
+
+.wrapper__mail-section {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 0.63rem;
   &:hover {
-    .header-mail-section__envelope-icon {
+    .mail-section__envelope-icon {
       fill: $HoverColor;
     }
-    .header-mail-section__link {
+    .mail-section__link {
       color: $HoverColor;
     }
   }
-  &:has(> .header-mail-section__link:focus) {
-    .header-mail-section__envelope-icon {
+  &:has(> .mail-section__link:focus) {
+    .mail-section__envelope-icon {
       fill: $HoverColor;
     }
   }
 }
 
-.header-tel-section {
+.wrapper-tel-section {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 0.63rem;
   &:hover {
-    .header-tel-section__smartphone-icon {
+    .tel-section__smartphone-icon {
       fill: $HoverColor;
     }
-    .header-tel-section__link {
+    .tel-section__link {
       color: $HoverColor;
     }
   }
-  &:has(> .header-tel-section__link:focus) {
-    .header-tel-section__smartphone-icon {
+  &:has(> .tel-section__link:focus) {
+    .tel-section__smartphone-icon {
       fill: $HoverColor;
     }
   }
 }
 
-.header-mail-section__link {
+.mail-section__link {
   color: $ClickablesColor;
   font-weight: 500;
   font-size: 0.9rem;
@@ -62,7 +64,7 @@
   }
 }
 
-.header-tel-section__link {
+.tel-section__link {
   color: $ClickablesColor;
   font-weight: 500;
   font-size: 0.9rem;
@@ -76,7 +78,7 @@
   }
 }
 
-.header-mail-section__envelope-icon {
+.mail-section__envelope-icon {
   fill: rgba(117, 117, 117, 1);
   cursor: pointer;
   transition-property: fill;
@@ -84,7 +86,7 @@
   transition-timing-function: $TransitionTimingFunction;
 }
 
-.header-tel-section__smartphone-icon {
+.tel-section__smartphone-icon {
   fill: rgba(117, 117, 117, 1);
   cursor: pointer;
   transition-property: fill;
@@ -92,16 +94,17 @@
   transition-timing-function: $TransitionTimingFunction;
 }
 
-.main-nav {
+.wrapper__main-nav {
   flex: 1;
 }
 
 .main-nav__list {
+  @extend .list-display;
   justify-content: flex-start;
   column-gap: 2.9rem;
 }
 
-.main-nav__link {
+.nav-item__link {
   font-weight: 500;
   font-size: 0.9rem;
   line-height: 1.03;
@@ -117,8 +120,8 @@
   }
 }
 
-.main-nav__item--is-active {
-  .main-nav__link {
+.nav-item__link--is-active {
+  .nav-item__link {
     color: $HoverColor;
   }
   position: relative;
